@@ -9,7 +9,7 @@ const Child = ({ todos, handleComplete }) => {
             <li key={todo.id}>
               {todo.todo}
               {!todo.completed && (
-                <button data-testid="my-button" onClick={() => handleComplete(todo.id)}>
+                <button data-testid="complete-btn-1" onClick={() => handleComplete(todo.id)}>
                   Complete
                 </button>
               )}
